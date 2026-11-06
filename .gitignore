@@ -1,0 +1,46 @@
+# Python environments and generated caches
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+.cache/
+build/
+dist/
+*.egg-info/
+*.py[cod]
+
+# Local credentials and sensitive configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+token*.json
+secrets.*
+
+# Model checkpoints, exported graphs, and external ONNX weight blobs
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.onnx.data
+*.model
+*.prof
+*.trace
+*profile*.json
+
+# Machine-specific raw measurements and profiler traces can contain local paths
+results/**/*.json
+results/**/onnxruntime_profile*.json
+results/*.tmp

@@ -1,0 +1,52 @@
+{
+  "dataset_name": "small-public-domain-animal-validation",
+  "dataset_version": 1,
+  "purpose": "Smoke validation of image preprocessing, prediction agreement, and top-1 accuracy; not a representative accuracy benchmark.",
+  "images": [
+    {
+      "file": "labrador_dog.jpg",
+      "subject": "Labrador retriever on a beach",
+      "expected_imagenet_label": "Labrador retriever",
+      "expected_imagenet_index": 208,
+      "author": "Karen Arnold",
+      "license": "CC0 1.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Labrador_dog.jpg",
+      "source_image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Labrador_dog.jpg",
+      "sha256": "16be465d30b7ab71678d241867559b1a8f79e73995fc113f013cfae11ee3559d",
+      "image_size": [
+        1920,
+        1731
+      ]
+    },
+    {
+      "file": "tabby_cat.jpg",
+      "subject": "Tabby cat",
+      "expected_imagenet_label": "tabby cat",
+      "expected_imagenet_index": 281,
+      "author": "Ubuntuist",
+      "license": "Public domain, released by copyright holder",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tabby-cat.jpg",
+      "source_image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Tabby-cat.jpg",
+      "sha256": "d195284474cb250c9c953e9665e4608aa3f36b7508919809a2b27bd7e527600a",
+      "image_size": [
+        2288,
+        1712
+      ]
+    },
+    {
+      "file": "goldfish.jpg",
+      "subject": "Common goldfish",
+      "expected_imagenet_label": "goldfish",
+      "expected_imagenet_index": 1,
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC0 1.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Goldfish,_which_has_been_brought_up_for_about_15_years.JPG",
+      "source_image": "https://upload.wikimedia.org/wikipedia/commons/5/50/Goldfish%2C_which_has_been_brought_up_for_about_15_years.JPG",
+      "sha256": "a0a0b749a582f63420ad45ced09d52960101f8d3bc7c7433115f7f5aef601459",
+      "image_size": [
+        2556,
+        1914
+      ]
+    }
+  ]
+}

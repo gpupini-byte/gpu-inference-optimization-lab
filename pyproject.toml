@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpu-inference-lab"
+version = "0.1.0"
+description = "Reproducible CPU and CUDA inference benchmarks for ResNet-18"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "matplotlib>=3.7", "pillow>=10"]
+day2 = ["pytest>=8", "matplotlib>=3.7", "onnxruntime-gpu==1.30.0", "onnx>=1.17", "onnxscript>=0.4"]
+day3 = ["pytest>=8", "matplotlib>=3.7", "onnxruntime-gpu==1.30.0", "onnx>=1.17", "onnxscript>=0.4", "pillow>=10"]
+
+[project.scripts]
+gpu-inference-benchmark = "gpu_inference_lab.cli:main"
+gpu-inference-validation = "gpu_inference_lab.day3:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
